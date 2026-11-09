@@ -1,0 +1,12 @@
+[
+  {
+    "key": "ctrl+k v",
+    "command": "markdown.showPreviewToSide",
+    "when": "editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+k v",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "activeEditorId == 'workbench.editors.markdown.preview'"
+  }
+]

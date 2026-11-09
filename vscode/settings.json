@@ -1,0 +1,138 @@
+{
+  // General Editor
+  "editor.formatOnSave": true,
+  "editor.fontSize": 18,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordWrap": "on",
+  "editor.hover.delay": 100,
+  "editor.linkedEditing": true,
+  "editor.padding.top": 16,
+  "editor.smoothScrolling": true,
+  "editor.mouseWheelZoom": true,
+
+  // Navigation
+  "editor.gotoLocation.multipleReferences": "peek",
+
+  // Code Editing
+  "editor.renderWhitespace": "selection",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+
+  // Code Actions
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+
+  // TypeScript / JavaScript
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+
+  // Dart / Flutter
+  "[dart]": {
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80]
+  },
+  "dart.flutterSdkPath": "C:\\Users\\leigh\\flutter",
+
+  // C / C++
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+
+  // CMake
+  "cmake.debugConfig": {
+    "cwd": "${workspaceFolder}"
+  },
+  "cmake.showOptionsMovedNotification": false,
+
+  // YAML
+  "yaml.disableSchemaDetection": [
+    "**/.github/workflows/*.yml",
+    "**/.github/workflows/*.yaml",
+    "**/.gitea/workflows/*.yml",
+    "**/.gitea/workflows/*.yaml",
+    "**/.forgejo/workflows/*.yml",
+    "**/.forgejo/workflows/*.yaml"
+  ],
+
+  // Files
+  "files.autoSave": "afterDelay",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+
+  // Explorer
+  "explorer.confirmDelete": true,
+
+  // Terminal
+  "terminal.integrated.initialHint": false,
+
+  // Workbench
+  "workbench.startupEditor": "none",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "window.newWindowDimensions": "inherit",
+  "editor.overviewRulerBorder": false,
+  "window.commandCenter": false,
+  "window.title": "${rootName}",
+
+  // Diff Editor
+  "diffEditor.ignoreTrimWhitespace": true,
+
+  // Theme & Icons
+  "workbench.colorTheme": "Aura Dark",
+
+  // Custom Styling
+  "vscode_custom_css.imports": [
+    "file:///absolute/path/to/vscode/styling/custom.css",
+    "file:///absolute/path/to/vscode/styling/custom.js"
+  ],
+
+  "workbench.colorCustomizations": {
+    "[Aura Dark]": {
+      // Selected editor tab
+      "tab.activeBackground": "#4FD6BE18",
+      "tab.activeForeground": "#4FD6BE",
+      "tab.activeBorderTop": "#4FD6BE",
+
+      // Selected sidebar item
+      "list.activeSelectionBackground": "#4FD6BE25",
+      "list.activeSelectionForeground": "#4FD6BE",
+      "list.activeSelectionIconForeground": "#4FD6BE",
+      "list.focusBackground": "#4FD6BE18",
+
+      // Selected sidebar item - unfocused
+      "list.inactiveSelectionBackground": "#4FD6BE18",
+      "list.inactiveSelectionForeground": "#4FD6BE",
+      "list.inactiveSelectionIconForeground": "#4FD6BE",
+
+      // Activity bar notification badge
+      "activityBarBadge.background": "#4FD6BE",
+      "activityBarBadge.foreground": "#15141B",
+
+      // Sidebar hover
+      "list.hoverBackground": "#4FD6BE18",
+      "list.hoverForeground": "#4FD6BE",
+      // Terminal
+      "terminalCursor.foreground": "#61FFCA",
+      "terminalCursor.background": "#15141B"
+    }
+  },
+  "workbench.iconTheme": "vscode-modern-icons"
+}

@@ -1,0 +1,132 @@
+/* Sidebar title */
+.composite.title h2 {
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  color: #4fd6be !important;
+}
+
+/* Active & Hovered File Icons */
+.monaco-workbench
+  .explorer-viewlet
+  .monaco-list-row.selected
+  .monaco-icon-label::before,
+.monaco-workbench
+  .explorer-viewlet
+  .monaco-list-row:hover
+  .monaco-icon-label::before {
+  background: #a277ff !important;
+}
+
+.monaco-workbench
+  .part.editor
+  .tabs-container
+  > .tab.active
+  .monaco-icon-label::before,
+.monaco-workbench
+  .part.editor
+  .tabs-container
+  > .tab:hover
+  .monaco-icon-label::before {
+  background: #a277ff !important;
+}
+
+/* Project title's style at the top. */
+.monaco-workbench
+  .part.titlebar
+  > .titlebar-container
+  > .titlebar-center
+  > .window-title
+  > .command-center
+  .action-item.command-center-center {
+  border: none !important;
+  background: transparent !important;
+}
+
+/* Project Title */
+.titlebar-left {
+  justify-content: flex-end !important;
+  flex-grow: 0 !important;
+  width: 75px !important;
+}
+
+.titlebar-right > * {
+  display: none !important;
+}
+
+/* Search Label */
+.search-label {
+  font-family: "Geist Mono" !important;
+  font-size: 14px !important;
+  display: block;
+}
+
+.codicon-arrow-right,
+.codicon-arrow-left {
+  display: none !important;
+}
+
+/* Reduce spacing between editor tabs */
+.monaco-workbench .part.editor .tabs-container {
+  gap: 0px !important;
+}
+
+.command-center-center {
+  width: auto !important;
+}
+
+/* Command Palette */
+.quick-input-widget {
+  z-index: 1001 !important;
+  transform: translateY(-50%) !important;
+  top: 50% !important;
+  padding: 10px 10px 18px 10px !important;
+  backdrop-filter: blur(3px) !important;
+}
+
+.quick-input-list,
+.quick-input-list .list_id_6 {
+  min-height: 400px !important;
+}
+
+/* Command palette text input */
+.quick-input-filter .monaco-inputbox {
+  padding: 4px !important;
+  font-family: var(--monaco-monospace-font) !important;
+  font-size: 18px !important;
+  margin-bottom: 4px !important;
+}
+
+/* Centre the window title across the entire title bar */
+.monaco-workbench .part.titlebar > .titlebar-container {
+  position: relative !important;
+}
+
+.monaco-workbench .part.titlebar .titlebar-center {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: max-content !important;
+  justify-content: center !important;
+  font-family: "Geist Mono", monospace !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  color: #4fd6be !important;
+  opacity: 1 !important;
+}
+
+.monaco-workbench .part.titlebar .window-title {
+  text-align: center !important;
+}
+
+#command-blur {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1000;
+}
