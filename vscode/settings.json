@@ -20,7 +20,8 @@
 
   // Code Actions
   "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
+    "source.fixAll": "explicit",
+    "source.sortImports": "explicit"
   },
 
   // TypeScript / JavaScript
